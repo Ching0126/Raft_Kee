@@ -3,7 +3,9 @@
 
 CMakeFiles/kv_cli.dir/app/main.cpp.o
  /root/Raft_Kee/app/main.cpp
+ /root/Raft_Kee/include/command.h
  /root/Raft_Kee/include/kv_server.h
+ /root/Raft_Kee/include/kv_state_machine.h
  /root/Raft_Kee/include/kv_store.h
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h

@@ -1,8 +1,7 @@
 CMakeFiles/kv_cli.dir/app/main.cpp.o: /root/Raft_Kee/app/main.cpp \
  /usr/include/stdc-predef.h /root/Raft_Kee/include/kv_server.h \
- /root/Raft_Kee/include/kv_state_machine.h \
- /root/Raft_Kee/include/command.h /usr/include/c++/13/string \
- /usr/include/c++/13/bits/requires_hosted.h \
+ /root/Raft_Kee/include/local_log.h /root/Raft_Kee/include/command.h \
+ /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -121,9 +120,10 @@ CMakeFiles/kv_cli.dir/app/main.cpp.o: /root/Raft_Kee/app/main.cpp \
  /usr/include/c++/13/bits/memory_resource.h /usr/include/c++/13/cstddef \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
- /usr/include/c++/13/bits/ranges_util.h /root/Raft_Kee/include/kv_store.h \
- /usr/include/c++/13/optional /usr/include/c++/13/exception \
- /usr/include/c++/13/bits/exception_ptr.h \
+ /usr/include/c++/13/bits/ranges_util.h \
+ /root/Raft_Kee/include/kv_state_machine.h \
+ /root/Raft_Kee/include/kv_store.h /usr/include/c++/13/optional \
+ /usr/include/c++/13/exception /usr/include/c++/13/bits/exception_ptr.h \
  /usr/include/c++/13/bits/cxxabi_init_exception.h \
  /usr/include/c++/13/typeinfo /usr/include/c++/13/bits/nested_exception.h \
  /usr/include/c++/13/bits/enable_special_members.h \
@@ -133,7 +133,11 @@ CMakeFiles/kv_cli.dir/app/main.cpp.o: /root/Raft_Kee/app/main.cpp \
  /usr/include/c++/13/bits/hashtable_policy.h \
  /usr/include/c++/13/ext/aligned_buffer.h \
  /usr/include/c++/13/bits/node_handle.h \
- /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/iostream \
+ /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/vector \
+ /usr/include/c++/13/bits/stl_uninitialized.h \
+ /usr/include/c++/13/bits/stl_vector.h \
+ /usr/include/c++/13/bits/stl_bvector.h \
+ /usr/include/c++/13/bits/vector.tcc /usr/include/c++/13/iostream \
  /usr/include/c++/13/ostream /usr/include/c++/13/ios \
  /usr/include/c++/13/bits/ios_base.h /usr/include/c++/13/ext/atomicity.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h \

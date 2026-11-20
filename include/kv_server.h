@@ -1,7 +1,7 @@
 #ifndef RAFT_KEE_KV_SERVER_H
 #define RAFT_KEE_KV_SERVER_H
 
-#include "kv_state_machine.h"
+#include "local_log.h"
 
 #include <optional>
 #include <string>
@@ -14,7 +14,7 @@ public:
 
     std::optional<std::string> get(const std::string& key);
 private:
-    KvStateMachine state_machine_;
+    LocalLog log_;
 };
 
 #endif

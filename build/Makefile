@@ -165,6 +165,19 @@ state_machine_test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/state_machine_test.dir/build.make CMakeFiles/state_machine_test.dir/build
 .PHONY : state_machine_test/fast
 
+#=============================================================================
+# Target rules for targets named local_log_test
+
+# Build rule for target.
+local_log_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 local_log_test
+.PHONY : local_log_test
+
+# fast build rule for target.
+local_log_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/local_log_test.dir/build.make CMakeFiles/local_log_test.dir/build
+.PHONY : local_log_test/fast
+
 app/main.o: app/main.cpp.o
 .PHONY : app/main.o
 
@@ -261,6 +274,54 @@ src/kv_store.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_core.dir/build.make CMakeFiles/kv_core.dir/src/kv_store.cpp.s
 .PHONY : src/kv_store.cpp.s
 
+src/local_log.o: src/local_log.cpp.o
+.PHONY : src/local_log.o
+
+# target to build an object file
+src/local_log.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_core.dir/build.make CMakeFiles/kv_core.dir/src/local_log.cpp.o
+.PHONY : src/local_log.cpp.o
+
+src/local_log.i: src/local_log.cpp.i
+.PHONY : src/local_log.i
+
+# target to preprocess a source file
+src/local_log.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_core.dir/build.make CMakeFiles/kv_core.dir/src/local_log.cpp.i
+.PHONY : src/local_log.cpp.i
+
+src/local_log.s: src/local_log.cpp.s
+.PHONY : src/local_log.s
+
+# target to generate assembly for a file
+src/local_log.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_core.dir/build.make CMakeFiles/kv_core.dir/src/local_log.cpp.s
+.PHONY : src/local_log.cpp.s
+
+tests/local_log_test.o: tests/local_log_test.cpp.o
+.PHONY : tests/local_log_test.o
+
+# target to build an object file
+tests/local_log_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/local_log_test.dir/build.make CMakeFiles/local_log_test.dir/tests/local_log_test.cpp.o
+.PHONY : tests/local_log_test.cpp.o
+
+tests/local_log_test.i: tests/local_log_test.cpp.i
+.PHONY : tests/local_log_test.i
+
+# target to preprocess a source file
+tests/local_log_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/local_log_test.dir/build.make CMakeFiles/local_log_test.dir/tests/local_log_test.cpp.i
+.PHONY : tests/local_log_test.cpp.i
+
+tests/local_log_test.s: tests/local_log_test.cpp.s
+.PHONY : tests/local_log_test.s
+
+# target to generate assembly for a file
+tests/local_log_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/local_log_test.dir/build.make CMakeFiles/local_log_test.dir/tests/local_log_test.cpp.s
+.PHONY : tests/local_log_test.cpp.s
+
 tests/state_machine_test.o: tests/state_machine_test.cpp.o
 .PHONY : tests/state_machine_test.o
 
@@ -296,6 +357,7 @@ help:
 	@echo "... test"
 	@echo "... kv_cli"
 	@echo "... kv_core"
+	@echo "... local_log_test"
 	@echo "... state_machine_test"
 	@echo "... app/main.o"
 	@echo "... app/main.i"
@@ -309,6 +371,12 @@ help:
 	@echo "... src/kv_store.o"
 	@echo "... src/kv_store.i"
 	@echo "... src/kv_store.s"
+	@echo "... src/local_log.o"
+	@echo "... src/local_log.i"
+	@echo "... src/local_log.s"
+	@echo "... tests/local_log_test.o"
+	@echo "... tests/local_log_test.i"
+	@echo "... tests/local_log_test.s"
 	@echo "... tests/state_machine_test.o"
 	@echo "... tests/state_machine_test.i"
 	@echo "... tests/state_machine_test.s"

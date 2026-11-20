@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/local_log_test.dir/tests/local_log_test.cpp.o -o local_log_test  libkv_core.a 

@@ -43,4 +43,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/kv_core.dir/DependInfo.cmake"
   "CMakeFiles/kv_cli.dir/DependInfo.cmake"
   "CMakeFiles/state_machine_test.dir/DependInfo.cmake"
+  "CMakeFiles/local_log_test.dir/DependInfo.cmake"
   )
