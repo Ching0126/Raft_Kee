@@ -1,0 +1,19 @@
+Start testing: Nov 20 16:07 CST
+----------------------------------------------------------
+1/1 Testing: state_machine_test
+1/1 Test: state_machine_test
+Command: "/root/Raft_Kee/build/state_machine_test"
+Directory: /root/Raft_Kee/build
+"state_machine_test" start time: Nov 20 16:07 CST
+Output:
+----------------------------------------------------------
+State machine checks passed
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"state_machine_test" end time: Nov 20 16:07 CST
+"state_machine_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 20 16:07 CST

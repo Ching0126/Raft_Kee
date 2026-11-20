@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/root/Raft_Kee/src/kv_server.cpp" "CMakeFiles/kv_core.dir/src/kv_server.cpp.o" "gcc" "CMakeFiles/kv_core.dir/src/kv_server.cpp.o.d"
+  "/root/Raft_Kee/src/kv_state_machine.cpp" "CMakeFiles/kv_core.dir/src/kv_state_machine.cpp.o" "gcc" "CMakeFiles/kv_core.dir/src/kv_state_machine.cpp.o.d"
   "/root/Raft_Kee/src/kv_store.cpp" "CMakeFiles/kv_core.dir/src/kv_store.cpp.o" "gcc" "CMakeFiles/kv_core.dir/src/kv_store.cpp.o.d"
   )
 

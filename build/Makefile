@@ -65,6 +65,16 @@ CMAKE_BINARY_DIR = /root/Raft_Kee/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
@@ -142,6 +152,19 @@ kv_cli/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_cli.dir/build.make CMakeFiles/kv_cli.dir/build
 .PHONY : kv_cli/fast
 
+#=============================================================================
+# Target rules for targets named state_machine_test
+
+# Build rule for target.
+state_machine_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 state_machine_test
+.PHONY : state_machine_test
+
+# fast build rule for target.
+state_machine_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/state_machine_test.dir/build.make CMakeFiles/state_machine_test.dir/build
+.PHONY : state_machine_test/fast
+
 app/main.o: app/main.cpp.o
 .PHONY : app/main.o
 
@@ -190,6 +213,30 @@ src/kv_server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_core.dir/build.make CMakeFiles/kv_core.dir/src/kv_server.cpp.s
 .PHONY : src/kv_server.cpp.s
 
+src/kv_state_machine.o: src/kv_state_machine.cpp.o
+.PHONY : src/kv_state_machine.o
+
+# target to build an object file
+src/kv_state_machine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_core.dir/build.make CMakeFiles/kv_core.dir/src/kv_state_machine.cpp.o
+.PHONY : src/kv_state_machine.cpp.o
+
+src/kv_state_machine.i: src/kv_state_machine.cpp.i
+.PHONY : src/kv_state_machine.i
+
+# target to preprocess a source file
+src/kv_state_machine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_core.dir/build.make CMakeFiles/kv_core.dir/src/kv_state_machine.cpp.i
+.PHONY : src/kv_state_machine.cpp.i
+
+src/kv_state_machine.s: src/kv_state_machine.cpp.s
+.PHONY : src/kv_state_machine.s
+
+# target to generate assembly for a file
+src/kv_state_machine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_core.dir/build.make CMakeFiles/kv_core.dir/src/kv_state_machine.cpp.s
+.PHONY : src/kv_state_machine.cpp.s
+
 src/kv_store.o: src/kv_store.cpp.o
 .PHONY : src/kv_store.o
 
@@ -214,6 +261,30 @@ src/kv_store.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_core.dir/build.make CMakeFiles/kv_core.dir/src/kv_store.cpp.s
 .PHONY : src/kv_store.cpp.s
 
+tests/state_machine_test.o: tests/state_machine_test.cpp.o
+.PHONY : tests/state_machine_test.o
+
+# target to build an object file
+tests/state_machine_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/state_machine_test.dir/build.make CMakeFiles/state_machine_test.dir/tests/state_machine_test.cpp.o
+.PHONY : tests/state_machine_test.cpp.o
+
+tests/state_machine_test.i: tests/state_machine_test.cpp.i
+.PHONY : tests/state_machine_test.i
+
+# target to preprocess a source file
+tests/state_machine_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/state_machine_test.dir/build.make CMakeFiles/state_machine_test.dir/tests/state_machine_test.cpp.i
+.PHONY : tests/state_machine_test.cpp.i
+
+tests/state_machine_test.s: tests/state_machine_test.cpp.s
+.PHONY : tests/state_machine_test.s
+
+# target to generate assembly for a file
+tests/state_machine_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/state_machine_test.dir/build.make CMakeFiles/state_machine_test.dir/tests/state_machine_test.cpp.s
+.PHONY : tests/state_machine_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,17 +293,25 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... test"
 	@echo "... kv_cli"
 	@echo "... kv_core"
+	@echo "... state_machine_test"
 	@echo "... app/main.o"
 	@echo "... app/main.i"
 	@echo "... app/main.s"
 	@echo "... src/kv_server.o"
 	@echo "... src/kv_server.i"
 	@echo "... src/kv_server.s"
+	@echo "... src/kv_state_machine.o"
+	@echo "... src/kv_state_machine.i"
+	@echo "... src/kv_state_machine.s"
 	@echo "... src/kv_store.o"
 	@echo "... src/kv_store.i"
 	@echo "... src/kv_store.s"
+	@echo "... tests/state_machine_test.o"
+	@echo "... tests/state_machine_test.i"
+	@echo "... tests/state_machine_test.s"
 .PHONY : help
 
 

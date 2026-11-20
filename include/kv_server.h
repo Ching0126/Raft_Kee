@@ -1,7 +1,7 @@
 #ifndef RAFT_KEE_KV_SERVER_H
 #define RAFT_KEE_KV_SERVER_H
 
-#include "kv_store.h"
+#include "kv_state_machine.h"
 
 #include <optional>
 #include <string>
@@ -12,9 +12,9 @@ public:
 
     void append(const std::string& key,const std::string& value);
 
-    std::optional<std::string> get(const std::string& key)const;
+    std::optional<std::string> get(const std::string& key);
 private:
-    KvStore store_;
+    KvStateMachine state_machine_;
 };
 
 #endif

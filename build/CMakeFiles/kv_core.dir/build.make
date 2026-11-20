@@ -83,10 +83,24 @@ CMakeFiles/kv_core.dir/src/kv_store.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kv_core.dir/src/kv_store.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/Raft_Kee/src/kv_store.cpp -o CMakeFiles/kv_core.dir/src/kv_store.cpp.s
 
+CMakeFiles/kv_core.dir/src/kv_state_machine.cpp.o: CMakeFiles/kv_core.dir/flags.make
+CMakeFiles/kv_core.dir/src/kv_state_machine.cpp.o: /root/Raft_Kee/src/kv_state_machine.cpp
+CMakeFiles/kv_core.dir/src/kv_state_machine.cpp.o: CMakeFiles/kv_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/Raft_Kee/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/kv_core.dir/src/kv_state_machine.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kv_core.dir/src/kv_state_machine.cpp.o -MF CMakeFiles/kv_core.dir/src/kv_state_machine.cpp.o.d -o CMakeFiles/kv_core.dir/src/kv_state_machine.cpp.o -c /root/Raft_Kee/src/kv_state_machine.cpp
+
+CMakeFiles/kv_core.dir/src/kv_state_machine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kv_core.dir/src/kv_state_machine.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/Raft_Kee/src/kv_state_machine.cpp > CMakeFiles/kv_core.dir/src/kv_state_machine.cpp.i
+
+CMakeFiles/kv_core.dir/src/kv_state_machine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kv_core.dir/src/kv_state_machine.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/Raft_Kee/src/kv_state_machine.cpp -o CMakeFiles/kv_core.dir/src/kv_state_machine.cpp.s
+
 CMakeFiles/kv_core.dir/src/kv_server.cpp.o: CMakeFiles/kv_core.dir/flags.make
 CMakeFiles/kv_core.dir/src/kv_server.cpp.o: /root/Raft_Kee/src/kv_server.cpp
 CMakeFiles/kv_core.dir/src/kv_server.cpp.o: CMakeFiles/kv_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/Raft_Kee/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/kv_core.dir/src/kv_server.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/Raft_Kee/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/kv_core.dir/src/kv_server.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kv_core.dir/src/kv_server.cpp.o -MF CMakeFiles/kv_core.dir/src/kv_server.cpp.o.d -o CMakeFiles/kv_core.dir/src/kv_server.cpp.o -c /root/Raft_Kee/src/kv_server.cpp
 
 CMakeFiles/kv_core.dir/src/kv_server.cpp.i: cmake_force
@@ -100,16 +114,18 @@ CMakeFiles/kv_core.dir/src/kv_server.cpp.s: cmake_force
 # Object files for target kv_core
 kv_core_OBJECTS = \
 "CMakeFiles/kv_core.dir/src/kv_store.cpp.o" \
+"CMakeFiles/kv_core.dir/src/kv_state_machine.cpp.o" \
 "CMakeFiles/kv_core.dir/src/kv_server.cpp.o"
 
 # External object files for target kv_core
 kv_core_EXTERNAL_OBJECTS =
 
 libkv_core.a: CMakeFiles/kv_core.dir/src/kv_store.cpp.o
+libkv_core.a: CMakeFiles/kv_core.dir/src/kv_state_machine.cpp.o
 libkv_core.a: CMakeFiles/kv_core.dir/src/kv_server.cpp.o
 libkv_core.a: CMakeFiles/kv_core.dir/build.make
 libkv_core.a: CMakeFiles/kv_core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/root/Raft_Kee/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libkv_core.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/root/Raft_Kee/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libkv_core.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/kv_core.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kv_core.dir/link.txt --verbose=$(VERBOSE)
 
