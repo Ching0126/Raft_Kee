@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/kv_cli.dir/app/main.cpp.o -o kv_cli  libkv_core.a 

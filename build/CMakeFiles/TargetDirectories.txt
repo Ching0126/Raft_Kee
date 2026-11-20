@@ -1,0 +1,4 @@
+/root/Raft_Kee/build/CMakeFiles/kv_core.dir
+/root/Raft_Kee/build/CMakeFiles/kv_cli.dir
+/root/Raft_Kee/build/CMakeFiles/edit_cache.dir
+/root/Raft_Kee/build/CMakeFiles/rebuild_cache.dir
