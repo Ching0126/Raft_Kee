@@ -1,0 +1,2 @@
+/usr/bin/ar qc libkv_wire.a CMakeFiles/kv_wire.dir/kv.pb.cc.o CMakeFiles/kv_wire.dir/src/frame.cpp.o
+/usr/bin/ranlib libkv_wire.a

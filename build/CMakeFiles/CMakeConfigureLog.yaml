@@ -274,3 +274,40 @@ events:
       
       
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:99 (CHECK_CXX_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/usr/share/cmake-3.28/Modules/FindProtobuf.cmake:541 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
+    directories:
+      source: "/root/Raft_Kee/build/CMakeFiles/CMakeScratch/TryCompile-hRe3cx"
+      binary: "/root/Raft_Kee/build/CMakeFiles/CMakeScratch/TryCompile-hRe3cx"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/root/Raft_Kee/build/CMakeFiles/CMakeScratch/TryCompile-hRe3cx'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ccde9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ccde9.dir/build.make CMakeFiles/cmTC_ccde9.dir/build
+        gmake[1]: Entering directory '/root/Raft_Kee/build/CMakeFiles/CMakeScratch/TryCompile-hRe3cx'
+        Building CXX object CMakeFiles/cmTC_ccde9.dir/src.cxx.o
+        /usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=c++20 -o CMakeFiles/cmTC_ccde9.dir/src.cxx.o -c /root/Raft_Kee/build/CMakeFiles/CMakeScratch/TryCompile-hRe3cx/src.cxx
+        Linking CXX executable cmTC_ccde9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ccde9.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_ccde9.dir/src.cxx.o -o cmTC_ccde9 
+        gmake[1]: Leaving directory '/root/Raft_Kee/build/CMakeFiles/CMakeScratch/TryCompile-hRe3cx'
+        
+      exitCode: 0
+...

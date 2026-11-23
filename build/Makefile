@@ -178,6 +178,93 @@ local_log_test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/local_log_test.dir/build.make CMakeFiles/local_log_test.dir/build
 .PHONY : local_log_test/fast
 
+#=============================================================================
+# Target rules for targets named kv_wire
+
+# Build rule for target.
+kv_wire: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kv_wire
+.PHONY : kv_wire
+
+# fast build rule for target.
+kv_wire/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_wire.dir/build.make CMakeFiles/kv_wire.dir/build
+.PHONY : kv_wire/fast
+
+#=============================================================================
+# Target rules for targets named kv_server
+
+# Build rule for target.
+kv_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kv_server
+.PHONY : kv_server
+
+# fast build rule for target.
+kv_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_server.dir/build.make CMakeFiles/kv_server.dir/build
+.PHONY : kv_server/fast
+
+#=============================================================================
+# Target rules for targets named kv_remote
+
+# Build rule for target.
+kv_remote: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kv_remote
+.PHONY : kv_remote
+
+# fast build rule for target.
+kv_remote/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_remote.dir/build.make CMakeFiles/kv_remote.dir/build
+.PHONY : kv_remote/fast
+
+app/kv_remote.o: app/kv_remote.cpp.o
+.PHONY : app/kv_remote.o
+
+# target to build an object file
+app/kv_remote.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_remote.dir/build.make CMakeFiles/kv_remote.dir/app/kv_remote.cpp.o
+.PHONY : app/kv_remote.cpp.o
+
+app/kv_remote.i: app/kv_remote.cpp.i
+.PHONY : app/kv_remote.i
+
+# target to preprocess a source file
+app/kv_remote.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_remote.dir/build.make CMakeFiles/kv_remote.dir/app/kv_remote.cpp.i
+.PHONY : app/kv_remote.cpp.i
+
+app/kv_remote.s: app/kv_remote.cpp.s
+.PHONY : app/kv_remote.s
+
+# target to generate assembly for a file
+app/kv_remote.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_remote.dir/build.make CMakeFiles/kv_remote.dir/app/kv_remote.cpp.s
+.PHONY : app/kv_remote.cpp.s
+
+app/kv_server_main.o: app/kv_server_main.cpp.o
+.PHONY : app/kv_server_main.o
+
+# target to build an object file
+app/kv_server_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_server.dir/build.make CMakeFiles/kv_server.dir/app/kv_server_main.cpp.o
+.PHONY : app/kv_server_main.cpp.o
+
+app/kv_server_main.i: app/kv_server_main.cpp.i
+.PHONY : app/kv_server_main.i
+
+# target to preprocess a source file
+app/kv_server_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_server.dir/build.make CMakeFiles/kv_server.dir/app/kv_server_main.cpp.i
+.PHONY : app/kv_server_main.cpp.i
+
+app/kv_server_main.s: app/kv_server_main.cpp.s
+.PHONY : app/kv_server_main.s
+
+# target to generate assembly for a file
+app/kv_server_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_server.dir/build.make CMakeFiles/kv_server.dir/app/kv_server_main.cpp.s
+.PHONY : app/kv_server_main.cpp.s
+
 app/main.o: app/main.cpp.o
 .PHONY : app/main.o
 
@@ -201,6 +288,54 @@ app/main.s: app/main.cpp.s
 app/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_cli.dir/build.make CMakeFiles/kv_cli.dir/app/main.cpp.s
 .PHONY : app/main.cpp.s
+
+kv.pb.o: kv.pb.cc.o
+.PHONY : kv.pb.o
+
+# target to build an object file
+kv.pb.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_wire.dir/build.make CMakeFiles/kv_wire.dir/kv.pb.cc.o
+.PHONY : kv.pb.cc.o
+
+kv.pb.i: kv.pb.cc.i
+.PHONY : kv.pb.i
+
+# target to preprocess a source file
+kv.pb.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_wire.dir/build.make CMakeFiles/kv_wire.dir/kv.pb.cc.i
+.PHONY : kv.pb.cc.i
+
+kv.pb.s: kv.pb.cc.s
+.PHONY : kv.pb.s
+
+# target to generate assembly for a file
+kv.pb.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_wire.dir/build.make CMakeFiles/kv_wire.dir/kv.pb.cc.s
+.PHONY : kv.pb.cc.s
+
+src/frame.o: src/frame.cpp.o
+.PHONY : src/frame.o
+
+# target to build an object file
+src/frame.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_wire.dir/build.make CMakeFiles/kv_wire.dir/src/frame.cpp.o
+.PHONY : src/frame.cpp.o
+
+src/frame.i: src/frame.cpp.i
+.PHONY : src/frame.i
+
+# target to preprocess a source file
+src/frame.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_wire.dir/build.make CMakeFiles/kv_wire.dir/src/frame.cpp.i
+.PHONY : src/frame.cpp.i
+
+src/frame.s: src/frame.cpp.s
+.PHONY : src/frame.s
+
+# target to generate assembly for a file
+src/frame.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_wire.dir/build.make CMakeFiles/kv_wire.dir/src/frame.cpp.s
+.PHONY : src/frame.cpp.s
 
 src/kv_server.o: src/kv_server.cpp.o
 .PHONY : src/kv_server.o
@@ -357,11 +492,26 @@ help:
 	@echo "... test"
 	@echo "... kv_cli"
 	@echo "... kv_core"
+	@echo "... kv_remote"
+	@echo "... kv_server"
+	@echo "... kv_wire"
 	@echo "... local_log_test"
 	@echo "... state_machine_test"
+	@echo "... app/kv_remote.o"
+	@echo "... app/kv_remote.i"
+	@echo "... app/kv_remote.s"
+	@echo "... app/kv_server_main.o"
+	@echo "... app/kv_server_main.i"
+	@echo "... app/kv_server_main.s"
 	@echo "... app/main.o"
 	@echo "... app/main.i"
 	@echo "... app/main.s"
+	@echo "... kv.pb.o"
+	@echo "... kv.pb.i"
+	@echo "... kv.pb.s"
+	@echo "... src/frame.o"
+	@echo "... src/frame.i"
+	@echo "... src/frame.s"
 	@echo "... src/kv_server.o"
 	@echo "... src/kv_server.i"
 	@echo "... src/kv_server.s"

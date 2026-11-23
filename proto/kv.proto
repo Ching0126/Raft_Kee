@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package kvwire;
+
+enum Operation{
+    OP_UNSPECIFIED = 0;
+    PUT = 1;
+    APPEND = 2;
+    GET = 3;
+}
+
+message Request {
+    Operation Operation = 1;
+    string key = 2;
+    string value = 3;
+}
+
+enum Status{
+    STATUS_UNSPECIFIED = 0;
+    OK = 1;
+    NOT_FOUND = 2;
+    BAD_REQUEST = 3;
+}
+
+message Response{
+    Status status = 1;
+    string value = 2;
+}

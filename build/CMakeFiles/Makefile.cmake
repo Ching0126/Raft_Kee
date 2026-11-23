@@ -17,14 +17,23 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake"
+  "/usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake"
+  "/usr/share/cmake-3.28/Modules/CheckIncludeFileCXX.cmake"
+  "/usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake"
   "/usr/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/usr/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake"
   "/usr/share/cmake-3.28/Modules/Compiler/GNU.cmake"
+  "/usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake"
+  "/usr/share/cmake-3.28/Modules/FindPackageMessage.cmake"
+  "/usr/share/cmake-3.28/Modules/FindProtobuf.cmake"
+  "/usr/share/cmake-3.28/Modules/FindThreads.cmake"
+  "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake"
   "/usr/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake"
   "/usr/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake"
   "/usr/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake"
   "/usr/share/cmake-3.28/Modules/Platform/Linux.cmake"
   "/usr/share/cmake-3.28/Modules/Platform/UnixPaths.cmake"
+  "/usr/share/cmake-3.28/Modules/SelectLibraryConfigurations.cmake"
   )
 
 # The corresponding makefile is:
@@ -44,4 +53,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/kv_cli.dir/DependInfo.cmake"
   "CMakeFiles/state_machine_test.dir/DependInfo.cmake"
   "CMakeFiles/local_log_test.dir/DependInfo.cmake"
+  "CMakeFiles/kv_wire.dir/DependInfo.cmake"
+  "CMakeFiles/kv_server.dir/DependInfo.cmake"
+  "CMakeFiles/kv_remote.dir/DependInfo.cmake"
   )

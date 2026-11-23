@@ -1,10 +1,10 @@
-Start testing: Nov 20 17:01 CST
+Start testing: Nov 23 11:59 CST
 ----------------------------------------------------------
 1/2 Testing: state_machine_test
 1/2 Test: state_machine_test
 Command: "/root/Raft_Kee/build/state_machine_test"
 Directory: /root/Raft_Kee/build
-"state_machine_test" start time: Nov 20 17:01 CST
+"state_machine_test" start time: Nov 23 11:59 CST
 Output:
 ----------------------------------------------------------
 State machine checks passed
@@ -12,7 +12,7 @@ State machine checks passed
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"state_machine_test" end time: Nov 20 17:01 CST
+"state_machine_test" end time: Nov 23 11:59 CST
 "state_machine_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -20,7 +20,7 @@ Test Passed.
 2/2 Test: local_log_test
 Command: "/root/Raft_Kee/build/local_log_test"
 Directory: /root/Raft_Kee/build
-"local_log_test" start time: Nov 20 17:01 CST
+"local_log_test" start time: Nov 23 11:59 CST
 Output:
 ----------------------------------------------------------
 Applied indexes: 1, 2, 3, 4
@@ -30,8 +30,8 @@ Local log checks passed
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"local_log_test" end time: Nov 20 17:01 CST
+"local_log_test" end time: Nov 23 11:59 CST
 "local_log_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Nov 20 17:01 CST
+End testing: Nov 23 11:59 CST

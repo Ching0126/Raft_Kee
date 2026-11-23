@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/kv_remote.dir/app/kv_remote.cpp.o -o kv_remote  libkv_wire.a /usr/lib/x86_64-linux-gnu/libprotobuf.so 
