@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/kv_server.dir/app/kv_server_main.cpp.o -o kv_server  libkv_core.a libkv_wire.a /usr/lib/x86_64-linux-gnu/libprotobuf.so 
+/usr/bin/c++ CMakeFiles/kv_server.dir/app/kv_server_main.cpp.o -o kv_server  libkv_service.a libkv_core.a librpc_lib.a libkv_wire.a /usr/lib/x86_64-linux-gnu/libprotobuf.so 

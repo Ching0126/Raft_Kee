@@ -192,6 +192,32 @@ kv_wire/fast:
 .PHONY : kv_wire/fast
 
 #=============================================================================
+# Target rules for targets named rpc_lib
+
+# Build rule for target.
+rpc_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rpc_lib
+.PHONY : rpc_lib
+
+# fast build rule for target.
+rpc_lib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpc_lib.dir/build.make CMakeFiles/rpc_lib.dir/build
+.PHONY : rpc_lib/fast
+
+#=============================================================================
+# Target rules for targets named kv_service
+
+# Build rule for target.
+kv_service: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kv_service
+.PHONY : kv_service
+
+# fast build rule for target.
+kv_service/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_service.dir/build.make CMakeFiles/kv_service.dir/build
+.PHONY : kv_service/fast
+
+#=============================================================================
 # Target rules for targets named kv_server
 
 # Build rule for target.
@@ -216,6 +242,19 @@ kv_remote: cmake_check_build_system
 kv_remote/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_remote.dir/build.make CMakeFiles/kv_remote.dir/build
 .PHONY : kv_remote/fast
+
+#=============================================================================
+# Target rules for targets named rpc_dispatcher_test
+
+# Build rule for target.
+rpc_dispatcher_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rpc_dispatcher_test
+.PHONY : rpc_dispatcher_test
+
+# fast build rule for target.
+rpc_dispatcher_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpc_dispatcher_test.dir/build.make CMakeFiles/rpc_dispatcher_test.dir/build
+.PHONY : rpc_dispatcher_test/fast
 
 app/kv_remote.o: app/kv_remote.cpp.o
 .PHONY : app/kv_remote.o
@@ -313,6 +352,30 @@ kv.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_wire.dir/build.make CMakeFiles/kv_wire.dir/kv.pb.cc.s
 .PHONY : kv.pb.cc.s
 
+rpc.pb.o: rpc.pb.cc.o
+.PHONY : rpc.pb.o
+
+# target to build an object file
+rpc.pb.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_wire.dir/build.make CMakeFiles/kv_wire.dir/rpc.pb.cc.o
+.PHONY : rpc.pb.cc.o
+
+rpc.pb.i: rpc.pb.cc.i
+.PHONY : rpc.pb.i
+
+# target to preprocess a source file
+rpc.pb.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_wire.dir/build.make CMakeFiles/kv_wire.dir/rpc.pb.cc.i
+.PHONY : rpc.pb.cc.i
+
+rpc.pb.s: rpc.pb.cc.s
+.PHONY : rpc.pb.s
+
+# target to generate assembly for a file
+rpc.pb.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_wire.dir/build.make CMakeFiles/kv_wire.dir/rpc.pb.cc.s
+.PHONY : rpc.pb.cc.s
+
 src/frame.o: src/frame.cpp.o
 .PHONY : src/frame.o
 
@@ -336,6 +399,30 @@ src/frame.s: src/frame.cpp.s
 src/frame.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_wire.dir/build.make CMakeFiles/kv_wire.dir/src/frame.cpp.s
 .PHONY : src/frame.cpp.s
+
+src/kv_rpc_service.o: src/kv_rpc_service.cpp.o
+.PHONY : src/kv_rpc_service.o
+
+# target to build an object file
+src/kv_rpc_service.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_service.dir/build.make CMakeFiles/kv_service.dir/src/kv_rpc_service.cpp.o
+.PHONY : src/kv_rpc_service.cpp.o
+
+src/kv_rpc_service.i: src/kv_rpc_service.cpp.i
+.PHONY : src/kv_rpc_service.i
+
+# target to preprocess a source file
+src/kv_rpc_service.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_service.dir/build.make CMakeFiles/kv_service.dir/src/kv_rpc_service.cpp.i
+.PHONY : src/kv_rpc_service.cpp.i
+
+src/kv_rpc_service.s: src/kv_rpc_service.cpp.s
+.PHONY : src/kv_rpc_service.s
+
+# target to generate assembly for a file
+src/kv_rpc_service.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_service.dir/build.make CMakeFiles/kv_service.dir/src/kv_rpc_service.cpp.s
+.PHONY : src/kv_rpc_service.cpp.s
 
 src/kv_server.o: src/kv_server.cpp.o
 .PHONY : src/kv_server.o
@@ -433,6 +520,54 @@ src/local_log.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kv_core.dir/build.make CMakeFiles/kv_core.dir/src/local_log.cpp.s
 .PHONY : src/local_log.cpp.s
 
+src/rpc_channel.o: src/rpc_channel.cpp.o
+.PHONY : src/rpc_channel.o
+
+# target to build an object file
+src/rpc_channel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpc_lib.dir/build.make CMakeFiles/rpc_lib.dir/src/rpc_channel.cpp.o
+.PHONY : src/rpc_channel.cpp.o
+
+src/rpc_channel.i: src/rpc_channel.cpp.i
+.PHONY : src/rpc_channel.i
+
+# target to preprocess a source file
+src/rpc_channel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpc_lib.dir/build.make CMakeFiles/rpc_lib.dir/src/rpc_channel.cpp.i
+.PHONY : src/rpc_channel.cpp.i
+
+src/rpc_channel.s: src/rpc_channel.cpp.s
+.PHONY : src/rpc_channel.s
+
+# target to generate assembly for a file
+src/rpc_channel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpc_lib.dir/build.make CMakeFiles/rpc_lib.dir/src/rpc_channel.cpp.s
+.PHONY : src/rpc_channel.cpp.s
+
+src/rpc_dispatcher.o: src/rpc_dispatcher.cpp.o
+.PHONY : src/rpc_dispatcher.o
+
+# target to build an object file
+src/rpc_dispatcher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpc_lib.dir/build.make CMakeFiles/rpc_lib.dir/src/rpc_dispatcher.cpp.o
+.PHONY : src/rpc_dispatcher.cpp.o
+
+src/rpc_dispatcher.i: src/rpc_dispatcher.cpp.i
+.PHONY : src/rpc_dispatcher.i
+
+# target to preprocess a source file
+src/rpc_dispatcher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpc_lib.dir/build.make CMakeFiles/rpc_lib.dir/src/rpc_dispatcher.cpp.i
+.PHONY : src/rpc_dispatcher.cpp.i
+
+src/rpc_dispatcher.s: src/rpc_dispatcher.cpp.s
+.PHONY : src/rpc_dispatcher.s
+
+# target to generate assembly for a file
+src/rpc_dispatcher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpc_lib.dir/build.make CMakeFiles/rpc_lib.dir/src/rpc_dispatcher.cpp.s
+.PHONY : src/rpc_dispatcher.cpp.s
+
 tests/local_log_test.o: tests/local_log_test.cpp.o
 .PHONY : tests/local_log_test.o
 
@@ -456,6 +591,30 @@ tests/local_log_test.s: tests/local_log_test.cpp.s
 tests/local_log_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/local_log_test.dir/build.make CMakeFiles/local_log_test.dir/tests/local_log_test.cpp.s
 .PHONY : tests/local_log_test.cpp.s
+
+tests/rpc_dispatcher_test.o: tests/rpc_dispatcher_test.cpp.o
+.PHONY : tests/rpc_dispatcher_test.o
+
+# target to build an object file
+tests/rpc_dispatcher_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpc_dispatcher_test.dir/build.make CMakeFiles/rpc_dispatcher_test.dir/tests/rpc_dispatcher_test.cpp.o
+.PHONY : tests/rpc_dispatcher_test.cpp.o
+
+tests/rpc_dispatcher_test.i: tests/rpc_dispatcher_test.cpp.i
+.PHONY : tests/rpc_dispatcher_test.i
+
+# target to preprocess a source file
+tests/rpc_dispatcher_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpc_dispatcher_test.dir/build.make CMakeFiles/rpc_dispatcher_test.dir/tests/rpc_dispatcher_test.cpp.i
+.PHONY : tests/rpc_dispatcher_test.cpp.i
+
+tests/rpc_dispatcher_test.s: tests/rpc_dispatcher_test.cpp.s
+.PHONY : tests/rpc_dispatcher_test.s
+
+# target to generate assembly for a file
+tests/rpc_dispatcher_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpc_dispatcher_test.dir/build.make CMakeFiles/rpc_dispatcher_test.dir/tests/rpc_dispatcher_test.cpp.s
+.PHONY : tests/rpc_dispatcher_test.cpp.s
 
 tests/state_machine_test.o: tests/state_machine_test.cpp.o
 .PHONY : tests/state_machine_test.o
@@ -494,8 +653,11 @@ help:
 	@echo "... kv_core"
 	@echo "... kv_remote"
 	@echo "... kv_server"
+	@echo "... kv_service"
 	@echo "... kv_wire"
 	@echo "... local_log_test"
+	@echo "... rpc_dispatcher_test"
+	@echo "... rpc_lib"
 	@echo "... state_machine_test"
 	@echo "... app/kv_remote.o"
 	@echo "... app/kv_remote.i"
@@ -509,9 +671,15 @@ help:
 	@echo "... kv.pb.o"
 	@echo "... kv.pb.i"
 	@echo "... kv.pb.s"
+	@echo "... rpc.pb.o"
+	@echo "... rpc.pb.i"
+	@echo "... rpc.pb.s"
 	@echo "... src/frame.o"
 	@echo "... src/frame.i"
 	@echo "... src/frame.s"
+	@echo "... src/kv_rpc_service.o"
+	@echo "... src/kv_rpc_service.i"
+	@echo "... src/kv_rpc_service.s"
 	@echo "... src/kv_server.o"
 	@echo "... src/kv_server.i"
 	@echo "... src/kv_server.s"
@@ -524,9 +692,18 @@ help:
 	@echo "... src/local_log.o"
 	@echo "... src/local_log.i"
 	@echo "... src/local_log.s"
+	@echo "... src/rpc_channel.o"
+	@echo "... src/rpc_channel.i"
+	@echo "... src/rpc_channel.s"
+	@echo "... src/rpc_dispatcher.o"
+	@echo "... src/rpc_dispatcher.i"
+	@echo "... src/rpc_dispatcher.s"
 	@echo "... tests/local_log_test.o"
 	@echo "... tests/local_log_test.i"
 	@echo "... tests/local_log_test.s"
+	@echo "... tests/rpc_dispatcher_test.o"
+	@echo "... tests/rpc_dispatcher_test.i"
+	@echo "... tests/rpc_dispatcher_test.s"
 	@echo "... tests/state_machine_test.o"
 	@echo "... tests/state_machine_test.i"
 	@echo "... tests/state_machine_test.s"

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libkv_service.a CMakeFiles/kv_service.dir/src/kv_rpc_service.cpp.o
+/usr/bin/ranlib libkv_service.a

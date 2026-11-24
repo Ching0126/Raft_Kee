@@ -1,3 +1,4 @@
-state_machine_test 8 0.000376013
-local_log_test 7 0.000447447
+state_machine_test 14 0.000434539
+local_log_test 13 0.000403695
+rpc_dispatcher_test 1 0.00560444
 ---

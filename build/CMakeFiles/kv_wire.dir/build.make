@@ -77,10 +77,18 @@ kv.pb.h: /usr/bin/protoc
 kv.pb.cc: kv.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate kv.pb.cc
 
+rpc.pb.h: /root/Raft_Kee/proto/rpc.proto
+rpc.pb.h: /usr/bin/protoc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/Raft_Kee/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Running cpp protocol buffer compiler on proto/rpc.proto"
+	/usr/bin/protoc --cpp_out :/root/Raft_Kee/build -I /root/Raft_Kee/proto /root/Raft_Kee/proto/rpc.proto
+
+rpc.pb.cc: rpc.pb.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rpc.pb.cc
+
 CMakeFiles/kv_wire.dir/kv.pb.cc.o: CMakeFiles/kv_wire.dir/flags.make
 CMakeFiles/kv_wire.dir/kv.pb.cc.o: kv.pb.cc
 CMakeFiles/kv_wire.dir/kv.pb.cc.o: CMakeFiles/kv_wire.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/Raft_Kee/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/kv_wire.dir/kv.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/Raft_Kee/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/kv_wire.dir/kv.pb.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kv_wire.dir/kv.pb.cc.o -MF CMakeFiles/kv_wire.dir/kv.pb.cc.o.d -o CMakeFiles/kv_wire.dir/kv.pb.cc.o -c /root/Raft_Kee/build/kv.pb.cc
 
 CMakeFiles/kv_wire.dir/kv.pb.cc.i: cmake_force
@@ -91,10 +99,24 @@ CMakeFiles/kv_wire.dir/kv.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kv_wire.dir/kv.pb.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/Raft_Kee/build/kv.pb.cc -o CMakeFiles/kv_wire.dir/kv.pb.cc.s
 
+CMakeFiles/kv_wire.dir/rpc.pb.cc.o: CMakeFiles/kv_wire.dir/flags.make
+CMakeFiles/kv_wire.dir/rpc.pb.cc.o: rpc.pb.cc
+CMakeFiles/kv_wire.dir/rpc.pb.cc.o: CMakeFiles/kv_wire.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/Raft_Kee/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/kv_wire.dir/rpc.pb.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kv_wire.dir/rpc.pb.cc.o -MF CMakeFiles/kv_wire.dir/rpc.pb.cc.o.d -o CMakeFiles/kv_wire.dir/rpc.pb.cc.o -c /root/Raft_Kee/build/rpc.pb.cc
+
+CMakeFiles/kv_wire.dir/rpc.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kv_wire.dir/rpc.pb.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/Raft_Kee/build/rpc.pb.cc > CMakeFiles/kv_wire.dir/rpc.pb.cc.i
+
+CMakeFiles/kv_wire.dir/rpc.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kv_wire.dir/rpc.pb.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/Raft_Kee/build/rpc.pb.cc -o CMakeFiles/kv_wire.dir/rpc.pb.cc.s
+
 CMakeFiles/kv_wire.dir/src/frame.cpp.o: CMakeFiles/kv_wire.dir/flags.make
 CMakeFiles/kv_wire.dir/src/frame.cpp.o: /root/Raft_Kee/src/frame.cpp
 CMakeFiles/kv_wire.dir/src/frame.cpp.o: CMakeFiles/kv_wire.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/Raft_Kee/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/kv_wire.dir/src/frame.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/Raft_Kee/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/kv_wire.dir/src/frame.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kv_wire.dir/src/frame.cpp.o -MF CMakeFiles/kv_wire.dir/src/frame.cpp.o.d -o CMakeFiles/kv_wire.dir/src/frame.cpp.o -c /root/Raft_Kee/src/frame.cpp
 
 CMakeFiles/kv_wire.dir/src/frame.cpp.i: cmake_force
@@ -108,16 +130,18 @@ CMakeFiles/kv_wire.dir/src/frame.cpp.s: cmake_force
 # Object files for target kv_wire
 kv_wire_OBJECTS = \
 "CMakeFiles/kv_wire.dir/kv.pb.cc.o" \
+"CMakeFiles/kv_wire.dir/rpc.pb.cc.o" \
 "CMakeFiles/kv_wire.dir/src/frame.cpp.o"
 
 # External object files for target kv_wire
 kv_wire_EXTERNAL_OBJECTS =
 
 libkv_wire.a: CMakeFiles/kv_wire.dir/kv.pb.cc.o
+libkv_wire.a: CMakeFiles/kv_wire.dir/rpc.pb.cc.o
 libkv_wire.a: CMakeFiles/kv_wire.dir/src/frame.cpp.o
 libkv_wire.a: CMakeFiles/kv_wire.dir/build.make
 libkv_wire.a: CMakeFiles/kv_wire.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/root/Raft_Kee/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libkv_wire.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/root/Raft_Kee/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libkv_wire.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/kv_wire.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kv_wire.dir/link.txt --verbose=$(VERBOSE)
 
@@ -131,6 +155,8 @@ CMakeFiles/kv_wire.dir/clean:
 
 CMakeFiles/kv_wire.dir/depend: kv.pb.cc
 CMakeFiles/kv_wire.dir/depend: kv.pb.h
+CMakeFiles/kv_wire.dir/depend: rpc.pb.cc
+CMakeFiles/kv_wire.dir/depend: rpc.pb.h
 	cd /root/Raft_Kee/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/Raft_Kee /root/Raft_Kee /root/Raft_Kee/build /root/Raft_Kee/build /root/Raft_Kee/build/CMakeFiles/kv_wire.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/kv_wire.dir/depend
 

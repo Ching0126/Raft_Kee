@@ -3,8 +3,11 @@
 /root/Raft_Kee/build/CMakeFiles/state_machine_test.dir
 /root/Raft_Kee/build/CMakeFiles/local_log_test.dir
 /root/Raft_Kee/build/CMakeFiles/kv_wire.dir
+/root/Raft_Kee/build/CMakeFiles/rpc_lib.dir
+/root/Raft_Kee/build/CMakeFiles/kv_service.dir
 /root/Raft_Kee/build/CMakeFiles/kv_server.dir
 /root/Raft_Kee/build/CMakeFiles/kv_remote.dir
+/root/Raft_Kee/build/CMakeFiles/rpc_dispatcher_test.dir
 /root/Raft_Kee/build/CMakeFiles/test.dir
 /root/Raft_Kee/build/CMakeFiles/edit_cache.dir
 /root/Raft_Kee/build/CMakeFiles/rebuild_cache.dir

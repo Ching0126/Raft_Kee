@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/rpc_dispatcher_test.dir/tests/rpc_dispatcher_test.cpp.o -o rpc_dispatcher_test  libkv_service.a libkv_core.a librpc_lib.a libkv_wire.a /usr/lib/x86_64-linux-gnu/libprotobuf.so 

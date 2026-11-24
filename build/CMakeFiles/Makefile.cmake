@@ -54,6 +54,9 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/state_machine_test.dir/DependInfo.cmake"
   "CMakeFiles/local_log_test.dir/DependInfo.cmake"
   "CMakeFiles/kv_wire.dir/DependInfo.cmake"
+  "CMakeFiles/rpc_lib.dir/DependInfo.cmake"
+  "CMakeFiles/kv_service.dir/DependInfo.cmake"
   "CMakeFiles/kv_server.dir/DependInfo.cmake"
   "CMakeFiles/kv_remote.dir/DependInfo.cmake"
+  "CMakeFiles/rpc_dispatcher_test.dir/DependInfo.cmake"
   )

@@ -92,7 +92,9 @@ kv_server_EXTERNAL_OBJECTS =
 
 kv_server: CMakeFiles/kv_server.dir/app/kv_server_main.cpp.o
 kv_server: CMakeFiles/kv_server.dir/build.make
+kv_server: libkv_service.a
 kv_server: libkv_core.a
+kv_server: librpc_lib.a
 kv_server: libkv_wire.a
 kv_server: /usr/lib/x86_64-linux-gnu/libprotobuf.so
 kv_server: CMakeFiles/kv_server.dir/link.txt

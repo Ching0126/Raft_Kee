@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package rpcwire;
+
+message Request{
+    string service = 1;
+    string method = 2;
+    bytes payload = 3;
+}
+
+message Response{
+    bool success = 1;
+    string error = 2;
+    bytes payload = 3;
+}
+

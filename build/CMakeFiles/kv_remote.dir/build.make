@@ -92,6 +92,7 @@ kv_remote_EXTERNAL_OBJECTS =
 
 kv_remote: CMakeFiles/kv_remote.dir/app/kv_remote.cpp.o
 kv_remote: CMakeFiles/kv_remote.dir/build.make
+kv_remote: librpc_lib.a
 kv_remote: libkv_wire.a
 kv_remote: /usr/lib/x86_64-linux-gnu/libprotobuf.so
 kv_remote: CMakeFiles/kv_remote.dir/link.txt

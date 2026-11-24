@@ -1,37 +1,53 @@
-Start testing: Nov 23 11:59 CST
+Start testing: Nov 24 20:04 CST
 ----------------------------------------------------------
-1/2 Testing: state_machine_test
-1/2 Test: state_machine_test
+1/3 Testing: state_machine_test
+1/3 Test: state_machine_test
 Command: "/root/Raft_Kee/build/state_machine_test"
 Directory: /root/Raft_Kee/build
-"state_machine_test" start time: Nov 23 11:59 CST
+"state_machine_test" start time: Nov 24 20:04 CST
 Output:
 ----------------------------------------------------------
 State machine checks passed
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"state_machine_test" end time: Nov 23 11:59 CST
+"state_machine_test" end time: Nov 24 20:04 CST
 "state_machine_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/2 Testing: local_log_test
-2/2 Test: local_log_test
+2/3 Testing: local_log_test
+2/3 Test: local_log_test
 Command: "/root/Raft_Kee/build/local_log_test"
 Directory: /root/Raft_Kee/build
-"local_log_test" start time: Nov 23 11:59 CST
+"local_log_test" start time: Nov 24 20:04 CST
 Output:
 ----------------------------------------------------------
 Applied indexes: 1, 2, 3, 4
 Read value: hello_raft
 Local log checks passed
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"local_log_test" end time: Nov 23 11:59 CST
+"local_log_test" end time: Nov 24 20:04 CST
 "local_log_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Nov 23 11:59 CST
+3/3 Testing: rpc_dispatcher_test
+3/3 Test: rpc_dispatcher_test
+Command: "/root/Raft_Kee/build/rpc_dispatcher_test"
+Directory: /root/Raft_Kee/build
+"rpc_dispatcher_test" start time: Nov 24 20:04 CST
+Output:
+----------------------------------------------------------
+RPC dispatcher checks passed
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"rpc_dispatcher_test" end time: Nov 24 20:04 CST
+"rpc_dispatcher_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 24 20:04 CST
